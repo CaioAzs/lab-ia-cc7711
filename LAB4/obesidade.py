@@ -16,20 +16,20 @@ dieta.automf(names=['ruim', 'media', 'boa'])
 atividade.automf(names=['baixa', 'moderada', 'alta'])
 peso.automf(names=['baixo', 'normal', 'alto'])
 
-# # Método Triangular
+# # # Método Triangular
 # obesidade['baixa'] = fuzz.trimf(obesidade.universe, [0, 0, 50])
 # obesidade['media'] = fuzz.trimf(obesidade.universe, [25, 50, 75])
 # obesidade['alta'] = fuzz.trimf(obesidade.universe, [50, 100, 100])
 
-# # Método Gaussiano
-# obesidade['baixa'] = fuzz.gaussmf(obesidade.universe, 0, 10)
-# obesidade['media'] = fuzz.gaussmf(obesidade.universe, 50, 15)
-# obesidade['alta'] = fuzz.gaussmf(obesidade.universe, 100, 15)
+# Método Gaussiano
+obesidade['baixa'] = fuzz.gaussmf(obesidade.universe, 0, 10)
+obesidade['media'] = fuzz.gaussmf(obesidade.universe, 50, 15)
+obesidade['alta'] = fuzz.gaussmf(obesidade.universe, 100, 15)
 
 # Método Trapezoidal
-obesidade['baixa'] = fuzz.trapmf(obesidade.universe, [0, 0, 25, 50])
-obesidade['media'] = fuzz.trapmf(obesidade.universe, [25, 50, 75, 100])
-obesidade['alta'] = fuzz.trapmf(obesidade.universe, [75, 100, 100, 100])
+# obesidade['baixa'] = fuzz.trapmf(obesidade.universe, [0, 0, 25, 50])
+# obesidade['media'] = fuzz.trapmf(obesidade.universe, [25, 50, 75, 100])
+# obesidade['alta'] = fuzz.trapmf(obesidade.universe, [75, 100, 100, 100])
 
 # Visualizando as variáveis de entrada
 dieta.view()
