@@ -13,7 +13,6 @@
 4. **Dilatação**: A operação morfológica de dilatação expande as bordas detectadas, melhorando a definição dos contornos.
 5. **Detecção de contornos**: Os contornos são encontrados a partir da imagem dilatada.
 6. **Filtragem por área mínima**: Apenas contornos com área superior a um valor mínimo são mantidos.
-7. **Desenho dos contornos**: Os contornos filtrados são desenhados sobre a imagem original.
 
 # Girafa
 
@@ -24,7 +23,6 @@
 3. **Aplicação de gradiente morfológico**: Um gradiente morfológico é aplicado para destacar as bordas.
 4. **Detecção de contornos**: Os contornos são encontrados a partir da imagem resultante do gradiente.
 5. **Ordenação dos contornos**: Os contornos são ordenados por área, do maior para o menor.
-6. **Desenho dos contornos**: Os contornos detectados são desenhados na imagem original, destacando o contorno.
 
 # Satélite
 
@@ -36,7 +34,6 @@
 4. **Dilatação**: A operação de dilatação é aplicada para expandir as bordas detectadas, tornando-as mais visíveis.
 5. **Detecção de contornos**: Contornos são identificados na imagem dilatada.
 6. **Filtragem por área mínima**: Apenas contornos com área maior que um valor mínimo são mantidos.
-7. **Desenho dos contornos**: Os contornos filtrados são desenhados sobre a imagem original.
 
 Para executar os arquivos .py, entre na pasta LAB6: cd .\LAB6-Visao-Computacional\
 As imagens com o passo a passo e a imgem final de cada contorno estão nas pastas de análise.
